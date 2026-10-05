@@ -1,4 +1,6 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+// All API calls go to Next.js built-in API routes (/api/...)
+// Works both locally (localhost:3000) and on Vercel
+const API_BASE_URL = '/api';
 
 export interface DocumentItem {
   id: number;
